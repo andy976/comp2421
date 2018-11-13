@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style414.css" media="screen" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>GUO SONG LEARNING SYSTEM</title>
+</head>
+
+<body>
+	<!--starting make the decoration-->
+	 <div id="wrapper"> 
+	 <!--starting make the header of content-->
+	 
+		<div id="navbar">
+		<div class="search-container">
+				<form action="/action_page.php">
+				  <input type="text" placeholder="Search Here.." name="search">
+				  <button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			 </div>
+			 <button id="search" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">&nbsp;Advance Search</button>
+		<div id="id02" class="modal">
+		  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+		  <form class="modal-content animate" action="/action_page.php">
+			<div class="container">
+			  <h2 style="font-size:17px">Advance Search</h2>
+			 	<div class="card">
+				<form method="get" action="http://search.atomz.com/search/" >
+				<table cellspacing=0 cellpadding=0 border=0 style="color:black; font-size: 16px; font-family:Garamond;" >
+				<tr><td colspan=4>
+				<b>Search For:</b>
+				<input size=35 name="sp_q">
+				<!-- The "Search" button -->
+				<input type=submit value="Search">
+				<input type=hidden name="sp_a" value="sp99999999">
+				<input type=hidden name="sp_f" value="ISO-8859-1">
+				</td></tr>
+				<input type=hidden name="sp_advanced" value=1>
+				<!-- Allow "any," "all," or "phrase" -->
+				<tr><td valign=top>
+				<b>Match: </b>
+				</td><td colspan=4>
+				<input type=radio name="sp_p" value="any">Any word
+				<input type=radio name="sp_p" value="all" checked>All words
+				<input type=radio name="sp_p" value="phrase">Exact phrase<br>
+				<!-- Checkbox enables sound-alike matching -->
+				<input type=hidden name="sp_w_control" value=1>
+				<input type=checkbox name="sp_w" value="alike" checked>
+				Sound-alike matching
+				</td></tr>
+				
+				<!-- List box selects the search field -->
+				<tr><td valign=top>
+				<b>Within: </b>
+				</td><td colspan=4><select name="sp_x" size=1>
+				<option value="any" selected>Anywhere</option>
+				<option value="title">Title</option>
+				<option value="desc">Description</option>
+				<option value="keys">Keywords</option>
+				<option value="body">Body</option>
+				<option value="alt">Alternate text</option>
+				<option value="url">URL</option>
+				<option value="target">Target</option>
+				</select>
+				</td></tr>
+				<!-- List box selects number of results to show per page -->
+				<tr><td valign=top>
+				<b>Show: </b>
+				</td><td colspan=4><select name="sp_c" size=1>
+				<option value=5>5</option>
+				<option value=10 selected>10</option>
+				<option value=25>25</option>
+				<option value=50>50</option>
+				<option value=100>100</option>
+				</select> results 
+				<!-- Show or hide summaries in search results -->
+				<select name="sp_m" size=1>
+				<option value=1 selected>with</option>
+				<option value=0>without</option>
+				</select> summaries<br>
+				</td></tr>
+				
+				</table>
+				</form>
+				<br>
+				</div></div>
+
+			
+			
+		  </form>
+		</div>
+			<a href="123.html">Logout</a>
+		    <div class="dropdown">
+				<button class="dropbtn">
+					 <a href="javascript:void(0)">Courses</a>
+					 <i class="fa fa-caret-down"></i>
+				</button>
+					<div class="dropdown-content">
+					  <a href="#">COMP2011 Data Structure</a>
+					  <a href="#">COMP2411 Database</a>
+					  <a href="#">MM2021 Management & Organization</a>
+					</div>
+			</div> 
+		  <a href="view.html">Home</a>
+		</div>
+	
+	<div id="content">
+		<div class="hero-image">
+			<div class="hero-text">
+			<h1 style="font-size:100px">SORRY!</h1>
+			<p style="font-size:25px">You did not register this course.</p>
+			</div>
+		</div>
+	</div>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+</div>
+
+<div id="footer">
+	   │ GOU SONG LEARNING │<br>
+	   │ GOOD STUDYING & LEARNING EXPERIENCE│<br>
+	   │ Designed by Wing
+</div>		 		 
+<!-- end make the footer-->	
+</div>
+</body>
+</html>

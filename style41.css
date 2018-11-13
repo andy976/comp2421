@@ -1,0 +1,290 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+        background-color: #E3E4E4; 
+        margin: auto;
+}
+
+#wrapper { 	
+        width: 100%;		
+		margin: auto;   
+        border: 0px ;
+        }
+
+#bar {
+		
+        height: 50px;
+        font-weight: bolder;
+        color: #FFF;
+        font-size: 20px;
+        background-color:#6E6E6E;
+        margin: 0px;
+        padding:0px;
+		top:0;
+		overflow:hidden;
+		position:fixed;
+		width:100%;
+		font-family:Garamond;
+        }
+
+#bar li {
+          float:right;
+          width:178px;
+		  display:block;
+           list-style-type:none;
+          background-color:#6E6E6E;
+           text-align:center;
+           letter-spacing: 2px;
+             padding-top: 10px;
+
+           margin-right:px;
+           }
+
+#bar li a {
+          display: block;
+          width: 182px;
+          height:20px;
+           padding-top:2px;
+           color: #FFFFFF;
+           text-decoration: none;
+          }
+
+#bar li a:hover{
+           background-color:#6E6E6E
+		   width: 182px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  
+}
+.dropdown a{
+	padding-top:2px;
+	width: 182px;
+    height:20px;
+	text-decoration: none;
+	display: block;
+	color: #FFFFFF;
+	text-align:center;
+	font-family:Garamond;
+	letter-spacing: 2px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 184px;
+  padding: 0px;
+  
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color:#6E6E6E
+}
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password],input[type=email] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	
+}
+
+#n{
+	width: 25%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+#bar button {
+    background-color: #6E6E6E;
+    border: none;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0px;
+	top:0;
+	padding-top: 2px;
+    cursor: pointer;
+	font-family:Garamond;
+	font-weight: bolder;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 10px;
+	color:#6E6E6E;
+}
+
+
+
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 0px;
+	
+}
+span.c {
+    float: right;
+    padding-top: 0px;
+	
+	
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 350px;
+    top: 0;
+    width: 50%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 10px;
+	
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+	height: 95%;
+	
+}
+
+/* The Close X Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Close X button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+#content {
+		top:50px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("learning.PNG");
+        background-color:#F9F9F9;  
+        font-size: 16px; 
+        line-height: 0em;   
+        color:white; 
+        padding: 370px; 
+		font-family:Garamond;
+		text-align: justify;
+		text-justify: inter-word;
+		background-size: 1600px 760px; 
+		height: 0px;
+		background-repeat: no-repeat;
+  
+        }
+			
+
+
+
+
+#content button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 15px 25px;
+  color: white;
+  background-color: grey;
+  text-align: center;
+  cursor: pointer;
+  font-size:18px;
+  font-family:Garamond;
+ 
+}
+
+#content button:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+#footer {
+        background-color:#3E3E3F;     
+        font-size: 15px; 
+        line-height: 1.5em; 
+        color: #FFF; 
+        padding: 5px; 
+		font-family:Garamond;
+       }
+

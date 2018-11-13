@@ -1,0 +1,345 @@
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  height: 50px;
+  overflow: hidden;
+  background-color: #6E6E6E;
+  font-size: 20px;
+  font-family:Garamond;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 11px;
+  text-decoration: none;
+  width:161px;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+	
+}
+
+.dropdown .dropbtn {
+	letter-spacing: 2px;
+	font-weight: bolder;
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+	font-family:Garamond;
+	
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    width:178px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    width: 47px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky  {
+  padding-top: 0px;
+}
+
+.search-container {
+  float: left;
+  padding-left: 14px;
+}
+
+.search-container  input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.search-container  .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container  .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .search-container  .search-container {
+    float: none;
+  }
+  .search-container  a, .search-container  input[type=text], .search-container  .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .search-container  input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+/* Set a style for all buttons */
+#search {
+    background-color: #6E6E6E;
+    border: none;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0px;
+	top:0;
+	padding-top: 10px;
+	padding-left: 10px;
+    cursor: pointer;
+	font-family:Garamond;
+	font-weight: bolder;
+}
+
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 20px;
+	color:#6E6E6E;
+	
+}
+
+
+
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 0px;
+	
+}
+span.c {
+    float: right;
+    padding-top: 0px;
+	
+	
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 350px;
+    top: 200px;
+	
+    width: 50%; /* Full width */
+    height: 45%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 30px;
+	
+	
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 2px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+	height: 85%;
+	
+}
+
+/* The Close X Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Close X button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.card {
+  padding-top:0px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  font-size:25px;
+  margin: auto;
+  text-align: center;
+  text-align:left;
+  line-height: 1.7;
+   
+}
+
+
+
+
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+
+#content {
+		top:50px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("learning.PNG");
+        background-color:#F9F9F9;  
+        font-size: 16px; 
+        line-height: 0em;   
+        color:white; 
+        padding: 370px; 
+		font-family:Garamond;
+		text-align: justify;
+		text-justify: inter-word;
+		background-size: auto; 
+		height: 0px;
+		background-repeat: no-repeat;
+  
+        }
+		
+
+
+#mySidenav a {
+	height:20px;
+    position: absolute;
+    left: -135px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 150px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#LectureNotes,#Updateprofile {
+	top: 200px;
+    background-color: #fbfbfb;
+}
+	
+#Assignments {
+    top: 280px;
+    background-color: #eaeaea;
+}
+
+#Quizes {
+    top: 360px;
+    background-color: #b0b0b0;
+}
+
+
+
+
+#footer {
+        background-color:#3E3E3F;     
+        font-size: 15px; 
+        line-height: 1.5em; 
+        color: #FFF; 
+        padding: 5px; 
+		font-family:Garamond;
+       }

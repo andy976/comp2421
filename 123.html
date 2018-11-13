@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style41.css" media="screen" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>GUO SONG LEARNING SYSTEM</title>
+</head>
+
+<body>
+	<!--starting make the decoration-->
+	 <div id="wrapper"> 
+	 <!--starting make the header of content-->
+	 
+		<!-- starting make a navigation bar-->
+		<ul id="bar">
+		<li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></li>
+		<!-- The Modal -->
+			<div id="id01" class="modal">
+			  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+			  <!-- Modal Content -->
+			  <form class="modal-content animate" action="/action_page.php">
+				<div class="imgcontainer">
+				  <img src="man.png" alt="Avatar" class="avatar">
+				</div>
+
+				<div class="container">
+				<h3>Sign in with your LearningID and Password</h3>
+				<hr>
+				  <label for="uname"><b>LearningID</b></label>
+				  <input type="text" placeholder="Enter LearningID" name="lID" required>
+
+				  <label for="psw"><b>Password</b></label>
+				  <input type="password" placeholder="Enter Password" name="psw" required>
+
+				  <button type="submit" style="background-color:white; color:#6E6E6E">Login</button>
+				  <label>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+				  </label>
+				</div>
+				<div class="container" style="background-color:#f1f1f1">
+				  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="background-color:#f1f1f1; color:#6E6E6E" >Cancel</button>
+				  <span class="psw">Forgot <a href="#">password?</a></span>
+				</div>
+				
+			  </form>
+			</div>
+
+		<li><button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Registeration</button></li>
+		<div id="id02" class="modal">
+		  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+		  <form class="modal-content animate" action="/action_page.php">
+			<div class="container">
+			  <h2>Sign Up</h2>
+			  <p>Please fill in this form to create an account.</p>
+			  <hr>
+			  <label for="FN"><b>First Name</b></label>
+			  <input type="text" id="n" placeholder="Enter First Name" name="FN" required>
+			  
+			  <label for="LN"><b>Last Name</b></label>
+			  <input type="text" id="n" placeholder="Enter Last Name" name="LN" required>
+			  
+			  <label for="uname"><b>LearningID</b></label>
+			  <input type="text" placeholder="Enter LearningID" name="lID" required>
+
+			  <label for="psw"><b>Password</b></label>
+			  <input type="password" placeholder="Enter Password" name="psw" required>
+
+			  <label for="psw-repeat"><b>Repeat Password</b></label>
+			  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+			  
+			  <label for="email"><b>Email</b></label>
+			  <input type="email" placeholder="Enter Email" name="email" required>
+
+			  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p></div>
+
+			  <div class="container" style="background-color:#f1f1f1;">
+			  <button type="submit" class="signupbtn" style="background-color:#f1f1f1; color:#6E6E6E">Sign Up</button>
+              
+				<span class="c"><button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn" style="background-color:#f1f1f1; color:#6E6E6E">Cancel</button></span>
+				
+			  </div>
+		  </form>
+		</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+var modal = document.getElementById('id02');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+		<li><a href="123.html" >Home</a></li> 
+		</ul>
+	 </div>
+	 <!--end make a naviagation bar-->
+		
+		<div id="content">
+		<div class="hero-image">
+			<div class="hero-text">
+			<h2>WELCOME to GUO SONG LEARNING</h2>
+			<p>AN AMAZING LEARNING & STUDYING EXPERIENCE</p>
+			<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+			<!-- The Modal -->
+			<div id="id01" class="modal">
+			  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+			  <!-- Modal Content -->
+			  <form class="modal-content animate" action="/action_page.php">
+				<div class="imgcontainer">
+				  <img src="man.png" alt="Avatar" class="avatar">
+				</div>
+
+				<div class="container">
+				<h3>Sign in with your LearningID and Password</h3>
+				<hr>
+				  <label for="uname"><b>LearningID</b></label>
+				  <input type="text" placeholder="Enter LearningID" name="lID" required>
+
+				  <label for="psw"><b>Password</b></label>
+				  <input type="password" placeholder="Enter Password" name="psw" required>
+
+				  <button type="submit" style="background-color:white; color:#6E6E6E">Login</button>
+				  <label>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+				  </label>
+				</div>
+
+				<div class="container" style="background-color:#f1f1f1">
+				  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="background-color:#f1f1f1; color:#6E6E6E" >Cancel</button>
+				  <span class="psw">Forgot <a href="#">password?</a></span>
+				</div>
+				
+			  </form>
+		    </div>
+		</div>
+		</div>
+		
+
+
+</div>
+
+<div id="footer">
+	   │ GOU SONG LEARNING │<br>
+	   │ GOOD STUDYING & LEARNING EXPERIENCE│<br>
+	   │ Designed by Wing
+</div>		 		 
+<!-- end make the footer-->	
+</div>
+</body>
+</html>
